@@ -1,0 +1,212 @@
+.contentBox {
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  padding: 25px 25px;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 15px;
+  transition: all 0.1s ease-in-out;
+  font-family: "Plus Jakarta Sans" !important;
+  filter: drop-shadow(15px 10px 4px #0606060d);
+  &.countCardBox {
+    .staticClick {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-top: 15px;
+
+      li {
+        button {
+          background: transparent;
+          border: none;
+          padding: 2px 2px;
+          border-bottom: 3px solid #dfdfdf;
+          font-size: 14px;
+          margin-right: 10px;
+          color: #656464;
+
+          &.active,
+          &:focus {
+            border-bottom: 3px solid var(--Main2);
+            color: var(--Main2);
+          }
+        }
+      }
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #808080;
+      margin-bottom: 12px;
+    }
+    h3 {
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      color: #4d4d4d;
+      line-height: 2rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  &.countCardBox1 {
+    background-color: var(--Main);
+    p {
+      color: #496089;
+    }
+    :global(.container) {
+      margin-left: 10%;
+      :global(.animated-container) {
+        color: #496089;
+        div {
+          font-weight: 600;
+          font-family: "Plus Jakarta Sans" !important;
+        }
+      }
+    }
+  }
+  &.countCardBox2 {
+    background-color: var(--Main2);
+
+    p {
+      color: var(--Color2);
+    }
+    :global(.container) {
+      margin-left: 10%;
+      :global(.animated-container) {
+        div {
+          font-weight: 600;
+          color: var(--Color2);
+          font-family: "Plus Jakarta Sans" !important;
+        }
+      }
+    }
+  }
+  &.countCardBox3 {
+    background-color: var(--Main4);
+
+    p {
+      color: var(--Color4);
+    }
+    :global(.container) {
+      margin-left: 10%;
+      :global(.animated-container) {
+        div {
+          color: var(--Color4);
+          font-weight: 600;
+          font-family: "Plus Jakarta Sans" !important;
+        }
+      }
+    }
+  }
+  &:hover {
+    padding: 35px;
+    transform: translateY(-10px);
+  }
+  .tagsList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      span {
+        display: block;
+        border: 1px solid var(--Main2);
+        padding: 5px 15px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.addMoney {
+  background: var(--Main);
+
+  &:hover,
+  &:focus {
+    background: var(--Main);
+  }
+}
+.listContainer {
+  height: 100%;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+
+  .titleContainer {
+    padding: 20px 0px;
+    border-bottom: 1px solid #f1f1f1;
+    h5 {
+      padding-left: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      border-left: 4px solid var(--Main2);
+    }
+  }
+  .listItem {
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px solid #f1f1f1;
+    .cafeDetail {
+      h3 {
+        font-size: 18px;
+        margin: 0;
+      }
+      p {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+    .dualButtons {
+      button {
+        color: white;
+        font-weight: 500;
+        border-style: groove;
+        background-color: #8b81b3;
+        // background: linear-gradient(-135deg, #1de9b6 0%, #1dc4e9 100%);
+        width: max-content;
+        padding: 8px 15px;
+        min-height: auto;
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        &:nth-child(1) {
+          background-color: #cedcf49d;
+          color: #8b81b3;
+          // background: linear-gradient(-135deg, #899fd4 0%, #a389d4 100%);
+        }
+      }
+    }
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+  .listContainer {
+    .titleContainer {
+    }
+    .listItem {
+      flex-wrap: wrap;
+      .cafeDetail {
+      }
+      .dualButtons {
+        margin-top: 10px;
+      }
+    }
+  }
+}

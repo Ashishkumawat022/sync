@@ -1,0 +1,149 @@
+.searchSection {
+    padding-top: 110px;
+  }
+  
+  .mapViewSection {
+    background-color: #fbfbfb;
+  
+    .leftContainer {
+      width: 700px;
+      position: fixed;
+      left: 0;
+      background: #FBFBFB;
+      height:calc(100vh - 304px);
+      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
+  
+      &::-webkit-scrollbar {
+        width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color:#fff;
+          border-radius: 50px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #f1f1f1;
+          border-radius: 50px;
+        }
+  
+      .searchResult {
+        width: 100%;
+        padding: 20px 15px 0px 15px;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        background: #FBFBFB;
+
+        hr {
+           border-top: 1px solid #DEDEDE;
+           margin: 0px;
+           opacity: 1;
+        }
+  
+          p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 11px;
+            color: #878787;
+            margin-bottom: 7px;
+          }
+          h4 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0px;
+            padding-bottom: 20px;
+          }
+        }
+        .listContainer {
+          padding: 15px 15px;
+        }
+    }
+  
+    .mapBody {
+      padding-left: 700px;
+      padding-right: 0;
+      width: 100%;
+  
+      .mapBox {
+        height:calc(100vh - 304px);
+        width: 100%;
+        display: block;
+        margin: 0;
+        position: relative;
+
+        .listShowBtn {
+
+        }
+      }
+    }
+  }
+ 
+  .listShowBtn {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-weight: 600;
+    color: #BABABA;
+    font-size: 14px;
+    padding: 10px 13px;
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+    left: 15px;
+
+    span {
+      margin-left: 5px;
+      font-weight: 800;
+    }
+  }
+  
+  
+  /*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+  
+  
+  
+  @media (max-width:991px) {
+  
+.mapViewSection {
+  background-color: #fbfbfb;
+
+  .leftContainer {
+    width: 100%;
+    z-index: 1;
+    height: calc(100vh - 270px);
+
+    .searchResult {
+      display: none;
+      }
+      .listContainer {
+        padding: 15px 15px;
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-x: scroll;
+      }
+  }
+
+  .mapBody {
+    padding-left: 0px;
+    width: 100%;
+    display: none;
+
+    .mapBox {
+      height:calc(100vh - 270px);
+      width: 100%;
+      display: block;
+      margin: 0;
+    }
+  }
+}
+
+  
+  }

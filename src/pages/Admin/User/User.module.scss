@@ -1,0 +1,90 @@
+.buttonsContainer {
+  margin-bottom: 10px;
+  color: gray;
+  button {
+    font-size: 16px;
+
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      outline: none;
+      text-decoration: underline;
+    }
+    &.active {
+      outline: none;
+      text-decoration: underline;
+    }
+  }
+}
+.userDetailsWrapper {
+  margin-top: 10px;
+  .userInfo {
+    background-color: #fff;
+    padding: 20px 20px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+    .detailsCategory {
+      margin: 10px 5px 0px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .userDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h5 {
+        font-size: 20px;
+        margin: 0;
+      }
+      p {
+        color: #808080;
+        font-size: 14px;
+        margin: 0px;
+      }
+      span {
+        font-size: 14px;
+        display: flex;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .itemWrapper {
+      p {
+        width: 150px;
+        font-size: 12px;
+        color: #808080;
+        margin: 5px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 12px;
+        color: #5f5f5f;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+    }
+  }
+  .userDescription {
+  }
+  .aboutDetails {
+    min-height: 400px;
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      color: #808080;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .userDetailsWrapper {
+    .userDescription {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,418 @@
+.bannerSection {
+    background: var(--Main);
+    border-radius:0px 50px 50px 50px;
+    position: relative;
+    padding: 120px 0px 0px 0px;
+    
+	.shapeTouch {
+        position: absolute;
+        left: -1px;
+        top: 0px;    
+        width: 250px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .imgBox {
+
+        img {
+            width: 670px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .contentBox {
+        padding: 40px 0px;
+
+        .slTitle {
+            font-size: 80px;
+            font-weight: 600;
+            line-height: 84px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .downloads {
+            list-style: none;
+            display: flex;
+            margin: 0px;
+            margin-top: 20px;
+            padding: 0px;
+
+            li {
+
+                a {
+                    display:block;
+                    margin-right: 15px;
+
+                    img {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.featuredSection {
+
+    :global(.item) {
+        padding: 0px 15px;
+    }
+    
+    :global(.owl-carousel) {
+
+        :global(.owl-nav) {
+            display: flex;
+            position: absolute;
+            right: 0;
+            margin: 0;
+            margin-top: 18px;
+    
+            button {
+                width: 60px;
+                height: 60px;
+                background: #F3F3F3 !important;
+                border-radius: 50px !important;
+                font-size: 22px !important;
+                font-weight: bold !important;
+                display: flex !important;
+                justify-content: center;
+                color: #BABABA !important;
+                align-items: center;
+                transition: 0.5s !important;
+
+                &:hover {
+                    background: var(--Main2) !important;
+                    color: #738801 !important;
+                }
+            }
+        }
+    }
+       
+}
+
+.workSpaceSection {
+
+    .title2 {
+
+        .moon {
+            position: absolute;
+            bottom: -18px;
+            height: 60px;
+            right: 182px;
+            pointer-events: none;
+        }
+        .star {
+            position: absolute;
+            left: 45px;
+            top: -25px;
+            pointer-events: none;
+            height: 80px;
+        }
+    }
+
+    .sliderRow {
+        margin: 0 -27px;
+    }
+    :global(.owl-carousel) {
+
+        :global(.owl-stage) {
+
+            :global(.owl-item) {
+
+                &:nth-child(odd) {
+                }
+                &:nth-child(even) {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    
+    :global(.item) {
+        padding: 0px 15px;
+    }
+
+}
+.spaceCard {
+
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 15px 20px;
+        margin: 0px;
+    }
+}
+
+.cardBox {
+    position: relative;
+    height: 350px;
+    background: var(--Main2);
+    border-radius: 20px;
+
+    .overlay {
+        position: absolute;
+        top: -1px;
+        right: -2px;
+        width: 110px;
+
+        .bgShape {
+            width: 100%;
+            height: 100%;
+        
+            path {
+                fill:var(--BodyBackground);
+            }
+        }
+        .nextBtn {
+            position: absolute;
+            right: 0;
+            background-color: var(--Main2);
+            width: 65px;
+            height: 65px;
+            top: 3px;
+            border-radius: 10px;
+            color:var(--Color2);
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                transform: rotate(316deg);
+            }
+        }
+    }
+    
+    .icon {
+        margin: 40px 0px 0px 40px;
+    }
+    h5 {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        padding: 30px 40px;
+        font-size: 42px;
+        color: var(--Color2);
+        font-weight: 600;
+    }
+    
+
+    &.cardBox2 {
+        background: var(--Main3);
+        
+        .overlay {
+
+            .nextBtn {
+                background-color: var(--Main3);
+                color:var(--Color3);
+            }
+        }
+            
+        h5 {
+            color: var(--Color3);
+        }
+    }
+
+}
+.spaceBox {
+padding: 30px;
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+
+
+@media (max-width:991px) {
+    .spaceBox {
+       padding:10px;
+    }
+ 
+    .workSpaceSection {
+        margin-top: 30px;
+
+        .title2 {
+    
+            .moon {
+                right: 0px;
+            }
+            .star {
+                position: absolute;
+                left: 45px;
+                top: -25px;
+                pointer-events: none;
+                height: 80px;
+            }
+        }
+        .sliderRow {
+            margin: 0 0px;
+            
+            :global(.item) {
+                padding: 0px 10px;
+            }
+        }
+    
+    }
+    .bannerSection {
+        border-radius:0px 30px 30px 30px;
+        padding: 65px 0px 0px 0px;
+    
+        
+        .shapeTouch {
+            position: absolute;
+            left: -1px;
+            top: -1px;    
+            width: 170px;
+        }
+
+        .imgBox {
+            display: none;
+        }
+        .contentBox {
+            padding:40px 25px;
+    
+            .slTitle {
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+
+                br {
+                    display: none;
+                }
+            }
+    
+            .downloads {
+    
+                li {
+    
+                    a {
+    
+                        img {
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .featuredSection {
+
+        :global(.item) {
+            padding: 0px 10px;
+        }
+        
+        :global(.owl-carousel) {
+    
+            :global(.owl-nav) {
+                display: none;
+            }
+        }
+           
+    }
+    
+    .cardBox {
+        position: relative;
+        height: 280px;
+
+        h5 {
+            padding: 20px 20px;
+            font-size: 26px;
+        }
+        
+
+        &.cardBox2 {
+            margin-top: 20px;
+        }
+
+    }
+    
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .bannerSection {
+        border-radius:0px 30px 30px 30px;
+        padding: 65px 0px 0px 0px;
+    
+        
+
+        .imgBox {
+            display: block;
+
+            img {
+                width: 370px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+
+    .bannerSection {
+        
+        .imgBox {
+    
+            img {
+                width:530px;
+            }
+        }
+        .contentBox {
+            padding: 40px 0px;
+    
+            .slTitle {
+                font-size: 50px;
+                line-height:50px;
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1490px){
+
+    .bannerSection {
+        
+    
+        .imgBox {
+
+    
+            img {
+                width: 670px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .contentBox {
+            padding: 40px 0px;
+    
+            .slTitle {
+                font-size: 60px;
+                line-height: 70px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

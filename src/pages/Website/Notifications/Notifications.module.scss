@@ -1,0 +1,136 @@
+.NotificationSection {
+    padding-top: 130px;
+
+    .notificationBox {
+        background: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+
+        .notificationHeading {
+            padding: 30px 30px;
+            border-bottom: 1px solid #DEDEDE;
+
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .notificationStart{
+            padding: 0px 30px;
+
+            .notificationShow {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 25px 0px;
+
+                &.borderBottom {
+                    border-bottom: 1px solid #DEDEDE;
+                }
+
+                .notificationName {
+                    display: flex;
+                    align-items: center;
+
+                    .textAlign{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        margin-right: 8px;
+                    }
+
+                    h4 {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #393939;
+                        margin-bottom: 0px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #878787;
+                        margin-bottom: 0px;
+                        margin: 0px 10px;
+                    }
+                }
+
+                .notificationButton{
+                    display: flex;
+                    gap: 5px;
+
+                    button{
+                        padding: 0px 10px;
+                        min-width: 90px;
+                        height: 36px;
+                        line-height: initial;
+
+                        &.acceptBtn{
+                            color: #738801;
+                            background: #E0EBA5;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+@media (max-width:767px) {
+    
+    .NotificationSection {
+        padding-top: 90px !important;
+    
+        .notificationBox {
+    
+            .notificationHeading {
+                padding: 30px 12px;
+            }
+    
+            .notificationStart{
+                padding: 0px 12px;
+    
+                .notificationShow {
+                    display: block;
+
+                    .notificationName{
+                        align-items: self-start;
+
+                        .textAlign{
+                            display: block;
+
+                            p{
+                                margin: 6px 0px 0px 0px;
+                            }
+                        }
+                        img{
+                            width: 46px;
+                            height: 46px;
+                            margin-right: 12px;
+                        }
+                    }
+
+                    .notificationButton{
+                        margin-top: 16px;
+                    }
+    
+                }   
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {}

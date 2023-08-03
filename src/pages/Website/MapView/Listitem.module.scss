@@ -1,0 +1,228 @@
+.cardListItem {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding:15px 15px;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+
+  .listImage {
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+
+    
+    .imgBox {
+      width: 125px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px 0px 8px 8px;
+    }
+
+    .overlay {
+      position: absolute;
+      right: -1px;
+      height: 55px;
+      top: -1px;
+      z-index: 1;
+
+        .shape {
+          height: 100%;
+
+          path {
+            fill:#fff;
+          }
+        }
+        
+        .viewBtn {
+          width: 41px;
+          height: 41px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: #F8F8F8;
+
+            &.active {
+                background: #FFF0C6;
+            }
+
+            &.saved {
+                background: #FFB2B2;
+
+                img {
+                    height: 22px;
+                }
+            }
+
+            img {
+                height: 23px;
+            }
+        }
+    }
+
+    .playIcon {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .itemDetails {
+    width: 100%;
+    
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        margin-bottom: 0;
+        color: #878787;
+        font-weight: 500;
+        font-size: 14px;
+
+        .reviewCount {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.itemDetailsTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  
+  a {
+    color: #393939;
+   }
+
+  h3 {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #393939;
+
+    a {
+    color: #393939;
+    }
+  }
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #878787;
+    display: flex;
+    li {
+      list-style: none;
+      background-size: 1px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "•";
+        font-size: 6pt;
+        margin-right: 5px;
+      }
+      &:nth-child(2) {
+        span {
+          color: #45d6ad;
+        }
+      }
+    }
+  }
+
+}
+
+.profileIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    align-items: center;
+
+    li {
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border:1.5px solid white;
+        margin-left: -8px;
+        cursor: pointer;
+      }
+      span {
+        margin-left: -8px;
+        background: #FFF0C6;
+        border-radius: 50%;
+        border: 1.5px solid #FFF0C6;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        font-weight: 600;
+        color: #FFBA00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+    button {
+      font-weight: 600;
+      border: none;
+      font-size: 10px;
+      text-decoration-line: underline;
+      color: #878787;
+      background-color: transparent;
+    }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+
+
+
+@media (max-width:991px) {
+
+  .cardListItem {
+    margin:0px 5px;
+  
+    .listImage {
+  
+      
+      .imgBox {
+        width: 100px;
+        height: 100px;
+      }
+  
+    }
+  }
+  .itemDetailsTitle {
+  
+  
+    h3 {
+      font-size: 16px;
+      
+    }
+    span {
+      font-size: 10px;
+   
+    }
+  
+  }
+}
